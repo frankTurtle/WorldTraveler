@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "Record.h"
 
 @class Venue;
 
-@interface Menu : NSManagedObject
+@interface Menu : Record
 
 @property (nonatomic, retain) NSString * label;
 @property (nonatomic, retain) NSString * url;

@@ -22,4 +22,11 @@
 @dynamic location;
 @dynamic menu;
 
+// OVERRIDDEN METHOD
+// basically tells the API call where we want to start
++(NSString *)keyPathForResponseObject
+{
+    return @"response.venues";
+}
+
 @end

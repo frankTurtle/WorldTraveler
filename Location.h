@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "Record.h"
 
 @class Venue;
 
-@interface Location : NSManagedObject
+@interface Location : Record
 
 @property (nonatomic, retain) NSString * address;
 @property (nonatomic, retain) NSString * cc;
