@@ -16,6 +16,7 @@
 		10C11DEB1B9DD68700F72FEA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10C11DE91B9DD68700F72FEA /* LaunchScreen.xib */; };
 		10C11DF71B9DD68700F72FEA /* World_TravelerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C11DF61B9DD68700F72FEA /* World_TravelerTests.m */; };
 		10C11E051B9DD90E00F72FEA /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C11E041B9DD90E00F72FEA /* MapViewController.m */; };
+		10C11E071B9DDA8B00F72FEA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C11E061B9DDA8B00F72FEA /* CoreData.framework */; };
 		AD09D46672E5D460480E71D3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5F38FE84691F04B775F21D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		10C11DF61B9DD68700F72FEA /* World_TravelerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = World_TravelerTests.m; sourceTree = "<group>"; };
 		10C11E031B9DD90E00F72FEA /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		10C11E041B9DD90E00F72FEA /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		10C11E061B9DDA8B00F72FEA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		1B5F38FE84691F04B775F21D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2028B024AF82D2F1B477BE32 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		240C32BAA3678F7101F5AE09 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10C11E071B9DDA8B00F72FEA /* CoreData.framework in Frameworks */,
 				AD09D46672E5D460480E71D3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +164,7 @@
 		89E9AFD02D72A597C1A2941C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				10C11E061B9DDA8B00F72FEA /* CoreData.framework */,
 				1B5F38FE84691F04B775F21D /* libPods.a */,
 			);
 			name = Frameworks;
