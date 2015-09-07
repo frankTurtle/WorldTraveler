@@ -23,6 +23,7 @@
 		10C11E131B9DDD0200F72FEA /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C11E121B9DDD0200F72FEA /* Location.m */; };
 		10C11E161B9DDD0200F72FEA /* FSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C11E151B9DDD0200F72FEA /* FSCategory.m */; };
 		10C11E191B9DDDD300F72FEA /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C11E181B9DDDD300F72FEA /* Record.m */; };
+		10C11E1D1B9DDF5400F72FEA /* FourSquareSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C11E1C1B9DDF5400F72FEA /* FourSquareSessionManager.m */; };
 		AD09D46672E5D460480E71D3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5F38FE84691F04B775F21D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,8 @@
 		10C11E151B9DDD0200F72FEA /* FSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCategory.m; sourceTree = "<group>"; };
 		10C11E171B9DDDD300F72FEA /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
 		10C11E181B9DDDD300F72FEA /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
+		10C11E1B1B9DDF5400F72FEA /* FourSquareSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourSquareSessionManager.h; sourceTree = "<group>"; };
+		10C11E1C1B9DDF5400F72FEA /* FourSquareSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourSquareSessionManager.m; sourceTree = "<group>"; };
 		1B5F38FE84691F04B775F21D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2028B024AF82D2F1B477BE32 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		240C32BAA3678F7101F5AE09 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +185,7 @@
 		10C11E021B9DD80C00F72FEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				10C11E1A1B9DDF3300F72FEA /* API */,
 				10C11DE11B9DD68600F72FEA /* ListViewController.h */,
 				10C11DE21B9DD68600F72FEA /* ListViewController.m */,
 				10C11E031B9DD90E00F72FEA /* MapViewController.h */,
@@ -189,6 +193,15 @@
 				10C11DE41B9DD68600F72FEA /* Main.storyboard */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		10C11E1A1B9DDF3300F72FEA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				10C11E1B1B9DDF5400F72FEA /* FourSquareSessionManager.h */,
+				10C11E1C1B9DDF5400F72FEA /* FourSquareSessionManager.m */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 		89E9AFD02D72A597C1A2941C /* Frameworks */ = {
@@ -353,6 +366,7 @@
 				10C11E191B9DDDD300F72FEA /* Record.m in Sources */,
 				10C11DE31B9DD68600F72FEA /* ListViewController.m in Sources */,
 				10C11E101B9DDD0200F72FEA /* Venue.m in Sources */,
+				10C11E1D1B9DDF5400F72FEA /* FourSquareSessionManager.m in Sources */,
 				10C11E0A1B9DDD0100F72FEA /* Contact.m in Sources */,
 				10C11DDA1B9DD68600F72FEA /* main.m in Sources */,
 			);
