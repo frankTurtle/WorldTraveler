@@ -3,10 +3,12 @@
     <entity name="Contact" syncable="YES">
         <attribute name="formattedPhone" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="venue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Venue" inverseName="contact" inverseEntity="Venue" syncable="YES"/>
     </entity>
     <entity name="FSCategory" syncable="YES">
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="venue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Venue" inverseName="category" inverseEntity="Venue" syncable="YES"/>
     </entity>
     <entity name="Location" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
@@ -18,20 +20,26 @@
         <attribute name="lng" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="postalCode" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="venue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Venue" inverseName="location" inverseEntity="Venue" syncable="YES"/>
     </entity>
     <entity name="Menu" syncable="YES">
         <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="venue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Venue" inverseName="menu" inverseEntity="Venue" syncable="YES"/>
     </entity>
     <entity name="Venue" syncable="YES">
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FSCategory" inverseName="venue" inverseEntity="FSCategory" syncable="YES"/>
+        <relationship name="contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="venue" inverseEntity="Contact" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="venue" inverseEntity="Location" syncable="YES"/>
+        <relationship name="menu" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Menu" inverseName="venue" inverseEntity="Menu" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Contact" positionX="-63" positionY="-18" width="128" height="75"/>
-        <element name="FSCategory" positionX="-54" positionY="9" width="128" height="75"/>
-        <element name="Location" positionX="-36" positionY="27" width="128" height="180"/>
-        <element name="Menu" positionX="-18" positionY="99" width="128" height="75"/>
-        <element name="Venue" positionX="0" positionY="108" width="128" height="75"/>
+        <element name="Contact" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="FSCategory" positionX="-54" positionY="9" width="128" height="90"/>
+        <element name="Location" positionX="-36" positionY="27" width="128" height="195"/>
+        <element name="Menu" positionX="-18" positionY="99" width="128" height="90"/>
+        <element name="Venue" positionX="0" positionY="108" width="128" height="135"/>
     </elements>
 </model>
