@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 LebonTech Solutions. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ListViewController.h"
 
-@interface ViewController ()
+@interface ListViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,4 +24,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)refreshButtonPressed:(id)sender {
+}
 @end
